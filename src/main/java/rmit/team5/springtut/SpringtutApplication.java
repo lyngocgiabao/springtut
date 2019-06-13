@@ -15,11 +15,11 @@ import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 @SpringBootApplication
 @EnableJpaRepositories
 // enter the database name, database instance, username and password of Amazon RDS
-@EnableRdsInstance(databaseName="team5", dbInstanceIdentifier="rmitttsproject", username="team5",password="team5Database!")
+@EnableRdsInstance(databaseName="*YourDatabaseName*", dbInstanceIdentifier="*YourInstanceName*", username="*yourUserName*",password="*YourPassword*")
 // enter the credentials here with access key and password (a.k.a secret key)
-@EnableContextCredentials(accessKey="AKIAJF7V77GR6B52U53A", secretKey="l7RB7I0gLaEgc/R7cYACQjRMDk2ySNirE01wAITk")
+@EnableContextCredentials(accessKey="*YourAccessKey*", secretKey="*YourSecretKey*")
 // the region of the instance
-@EnableContextRegion(region="us-east-2")
+@EnableContextRegion(region="*YourRegion*")
 public class SpringtutApplication extends ServletInitializer{
 
 	@Override
